@@ -12,3 +12,9 @@ airserver.on('request', function (req, res) {
     if (buffers.length) console.log(Buffer.concat(buffers).toString());
   });
 });
+
+console.log('Starting AirServer...');
+airserver.listen(function () {
+  var port = airserver.address().port;
+  console.log('AirServer listening on port', port);
+});
