@@ -1,0 +1,35 @@
+{
+  "name": "airserver",
+  "version": "0.0.0",
+  "description": "An AirPlay server",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "common": "^0.2.5",
+    "debug": "^1.0.4",
+    "mdns": "^2.2.0",
+    "getmac": "^1.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/watson/airserver.git"
+  },
+  "keywords": [
+    "airplay",
+    "raop",
+    "airtunes",
+    "server"
+  ],
+  "author": "Thomas Watson Steen <w@tson.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/airserver/issues"
+  },
+  "homepage": "https://github.com/watson/airserver"
+}
