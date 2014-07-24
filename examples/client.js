@@ -21,3 +21,8 @@ mdns
     browser.start();
   })
   .start();
+
+// mdns throws when an unexpected protocol is detected - this is dirty but unfortunately required:
+process.on('uncaughtException', function (err) {
+  console.log('ERROR:', err.message);
+});
