@@ -7,8 +7,12 @@ var airserver = require('./lib/airserver');
 
 var server = module.exports = http.createServer();
 
-console.log('Starting HTTP server...');
-server.listen(port, function () {
-  console.log('HTTP server listening on port', port);
-  airserver(port);
+server.on('newListener', function (type, listener) {
+  if (type === 'request') {
+    console.log('Starting AirServer...');
+    server.listen(port, function () {
+      console.log('AirServer listening on port', port);
+      airserver(port);
+    });
+  }
 });
