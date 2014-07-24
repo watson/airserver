@@ -1,4 +1,3 @@
-airserver
-=========
+# AirServer
 
 Node.js AirPlay server
