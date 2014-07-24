@@ -3,6 +3,7 @@
 var airserver = require('../')();
 
 airserver.on('request', function (req, res) {
+  console.log('Processing incoming request...');
   var buffers = [];
   req.on('data', buffers.push.bind(buffers));
   req.on('end', function () {
