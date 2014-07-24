@@ -1,6 +1,6 @@
 'use strict';
 
-var airserver = require('../');
+var airserver = require('../')();
 
 airserver.on('request', function (req, res) {
   var buffers = [];
