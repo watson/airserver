@@ -4,7 +4,7 @@ var bplist = require('bplist-parser');
 var gm = require('graphicsmagick-stream');
 var pictureTube = require('picture-tube');
 
-var airserver = require('../')();
+var airserver = require('../lib/airserver')();
 
 var getServerInfo = function (req, res) {
   var mac = 'B8:8D:12:14:43:D4';

@@ -9,7 +9,8 @@
   "dependencies": {
     "airplay-server": "git://github.com/watson/airplay-server.git",
     "bplist-parser": "0.0.5",
-    "raop-server": "git://github.com/watson/raop-server.git"
+    "raop-server": "git://github.com/watson/raop-server.git",
+    "router": "^0.6.2"
   },
   "devDependencies": {
     "debug": "^1.0.4",
