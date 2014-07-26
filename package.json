@@ -7,12 +7,15 @@
     "example": "examples"
   },
   "dependencies": {
-    "common": "^0.2.5",
-    "debug": "^1.0.4",
-    "mdns": "^2.2.0",
-    "getmac": "^1.0.6"
+    "airplay-server": "git://github.com/watson/airplay-server.git",
+    "bplist-parser": "0.0.5",
+    "raop-server": "git://github.com/watson/raop-server.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "debug": "^1.0.4",
+    "graphicsmagick-stream": "^2.0.1",
+    "picture-tube": "0.0.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
