@@ -1,8 +1,14 @@
 'use strict';
 
-var airserver = require('./lib/airserver')();
+var airserver = require('./lib/airserver');
+var raop = require('./lib/raop');
+var airplay = require('./lib/airplay');
 
-require('./lib/raop')(airserver);
-require('./lib/airplay')(airserver);
+module.exports = function (name) {
+  var server = airserver(name);
 
-airserver.listen();
+  raop(server);
+  airplay(server);
+
+  return server;
+};
