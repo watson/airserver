@@ -4,7 +4,7 @@ var bplist = require('bplist-parser');
 var gm = require('graphicsmagick-stream');
 var pictureTube = require('picture-tube');
 
-var airserver = require('../lib/airserver')();
+var airserver = require('../')();
 
 var getServerInfo = function (req, res) {
   var mac = 'B8:8D:12:14:43:D4';
@@ -44,21 +44,12 @@ var getServerInfo = function (req, res) {
   res.end(body);
 };
 
-var putPhoto = function (req, res) {
+airserver.on('photo', function (stream) {
+  console.log('Preparing photo');
   var tube = pictureTube();
   tube.pipe(process.stdout);
   var toPng = gm({ format: 'png' });
-  req.pipe(toPng()).pipe(tube);
-};
-
-airserver.on('airplay', function (req, res) {
-  switch (req.url) {
-    case '/photo':
-      putPhoto(req, res);
-      break;
-    default:
-      res.end();
-  }
+  stream.pipe(toPng()).pipe(tube);
 });
 
 airserver.listen();
