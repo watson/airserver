@@ -10,5 +10,6 @@ This is very much work-in-progress :)
 var airserver = require('airserver')('Picture Frame');
 
 airserver.on('photo', function (stream) {
+  // frame it!
 });
 ```
