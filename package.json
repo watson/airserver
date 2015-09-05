@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "debug": "^1.0.4",
-    "graphicsmagick-stream": "^2.0.1",
+    "graphicsmagick-stream": "2.0.1",
     "mdns": "^2.2.0",
     "picture-tube": "0.0.4"
   },
