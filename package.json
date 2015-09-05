@@ -18,10 +18,11 @@
     "debug": "^2.2.0",
     "graphicsmagick-stream": "2.0.1",
     "mdns": "^2.2.0",
-    "picture-tube": "^1.0.0"
+    "picture-tube": "^1.0.0",
+    "standard": "^5.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
