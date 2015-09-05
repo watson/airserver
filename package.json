@@ -11,7 +11,8 @@
     "bplist-parser": "0.0.5",
     "plist": "^1.1.0",
     "raop-server": "git://github.com/watson/raop-server.git",
-    "router": "^0.6.2"
+    "router": "^0.6.2",
+    "xtend": "^4.0.0"
   },
   "devDependencies": {
     "debug": "^2.2.0",

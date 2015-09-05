@@ -1,0 +1,25 @@
+{
+  "raop": {
+    "txtvers": "1",
+    "ch": "2",
+    "cn": "0,1,2,3",
+    "da": "true",
+    "et": "0,3,5",
+    "md": "0,1,2",
+    "pw": "false",
+    "sv": "false",
+    "sr": "44100",
+    "ss": "16",
+    "tp": "UDP",
+    "vn": "65537",
+    "vs": "130.14",
+    "am": "AppleTV2,1",
+    "sf": "0x4"
+  },
+  "airplay": {
+    "deviceid": "58:55:CA:1A:E2:88",
+    "features": "0x39f7",
+    "model": "AppleTV2,1",
+    "srcvers": "130.14"
+  }
+}
