@@ -1,7 +1,7 @@
 language: node_js
 before_install:
 - sudo apt-get update -qq
-- sudo apt-get install -y libavahi-compat-libdnssd-dev
+- sudo apt-get install -y build-essential libavahi-compat-libdnssd-dev libgraphicsmagick++1-dev libarchive-dev
 node_js:
 - '0.12'
 - '0.10'
